@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>موقعي الشخصي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منيو البحر الأحمر</title>
+
+  <!-- خط Tajawal -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Tajawal', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* الهيدر */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      height: 50px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* شريط الأخبار */
+    .news-ticker {
+      width: 100%;
+      overflow: hidden;
+      background: #007BFF;
+      padding: 12px 0;
+      color: white;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .ticker-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* الصور */
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .images {
+        flex-direction: row;
+      }
+
+      .images img {
+        width: 33.3%;
+      }
+    }
+
+    /* الأزرار */
+    .buttons {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      border-radius: 8px;
+      background-color: #007BFF;
+    }
+
+    .buttons a.call {
+      background-color: #28a745;
+    }
+  </style>
 </head>
 <body>
-  <h1>أهلاً بك في موقعي!</h1>
-  <p>هذا أول موقع لي باستخدام GitHub Pages</p>
+
+  <!-- الهيدر -->
+  <div class="header">
+    <img src="https://via.placeholder.com/100x50?text=Logo" alt="لوجو" class="logo">
+    <div class="title">منيو البحر الأحمر</div>
+  </div>
+
+  <!-- شريط الأخبار -->
+  <div class="news-ticker">
+    <div class="ticker-text">
+      سردينا رقم واحد في أسوان &nbsp;|&nbsp; سردينا رقم واحد في أسوان &nbsp;|&nbsp; سردينا رقم واحد في أسوان
+    </div>
+  </div>
+
+  <!-- الصور -->
+  <div class="images">
+    <img src="https://via.placeholder.com/400x250?text=صورة+1" alt="صورة 1">
+    <img src="https://via.placeholder.com/400x250?text=صورة+2" alt="صورة 2">
+    <img src="https://via.placeholder.com/400x250?text=صورة+3" alt="صورة 3">
+  </div>
+
+  <!-- الأزرار -->
+  <div class="buttons">
+    <a href="tel:01111111111" class="call">اتصل بنا</a>
+    <a href="https://www.facebook.com/YourPageUsername" target="_blank">تابعنا على فيسبوك</a>
+  </div>
+
 </body>
 </html>
