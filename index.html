@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>منيو مطعم سردينا للأسماك</title>
+  <title>مطعم سردينا للأسماك</title>
 
   <!-- خط Tajawal -->
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet" />
@@ -14,16 +14,31 @@
       font-family: 'Tajawal', sans-serif;
       background-color: #f8f9fa;
       direction: rtl;
+      text-align: center;
     }
 
     /* الهيدر */
     .header {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-between;
-      padding: 15px 20px;
+      padding: 20px;
       background-color: #ffffff;
       border-bottom: 1px solid #ddd;
+    }
+
+    .header-top {
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
     }
 
     .logo {
@@ -32,20 +47,19 @@
     }
 
     .title {
-      font-size: 24px;
-      font-weight: bold;
-      color: #333;
+      font-size: 20px;
+      font-weight: 500;
+      color: #555;
     }
 
     /* شريط الأخبار */
     .news-ticker {
       width: 100%;
       overflow: hidden;
-      background: #1e94c1;
+      background: #007BFF;
       padding: 12px 0;
       color: white;
       font-size: 18px;
-      text-align: center;
     }
 
     .ticker-text {
@@ -102,7 +116,7 @@
       text-decoration: none;
       color: white;
       border-radius: 8px;
-      background-color: #1e94c1;
+      background-color: #007BFF;
     }
 
     .buttons a.call {
@@ -114,8 +128,11 @@
 
   <!-- الهيدر -->
   <div class="header">
-    <div class="title">منيو البحر الأحمر</div>
-    <img src="Logo.svg" alt="لوجو" class="logo">
+    <div class="header-top">مطعم سردينا للأسماك</div>
+    <div class="header-row">
+      <div class="title">منيو البحر الأحمر</div>
+      <img src="Logo.svg" alt="لوجو" class="logo">
+    </div>
   </div>
 
   <!-- شريط الأخبار -->
@@ -134,8 +151,8 @@
 
   <!-- الأزرار -->
   <div class="buttons">
-    <a href="tel:01117773757" class="call">اتصل بنا</a>
-    <a href="https://www.facebook.com/SardinaSeafood" target="_blank">تابعنا على فيسبوك</a>
+    <a href="tel:01111111111" class="call">اتصل بنا</a>
+    <a href="https://www.facebook.com/YourPageUsername" target="_blank">تابعنا على فيسبوك</a>
   </div>
 
 </body>
